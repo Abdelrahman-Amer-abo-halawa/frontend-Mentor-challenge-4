@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  /* font-family: "Young Serif", serif; */
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* --------------------------------------------------- */
+.page {
+  background-color: hsl(330, 100%, 98%);
+  position: absolute;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .page {
+    background-color: white;
+  }
+}
+main {
+  background-color: white;
+  padding: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 400px;
+  margin: 50px 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+@media (max-width: 767px) {
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+main img {
+  max-width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+@media (max-width: 767px) {
+  img {
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+}
+header h1 {
+  font-family: "Young Serif", serif;
+  font-size: 30px;
+  margin: 20px 0;
+  font-weight: 400;
+}
+header p {
+  font-size: 14px;
+  color: hsl(30, 10%, 34%);
+}
+.prep {
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px;
+  margin: 25px 0 0;
+  border-radius: 10px;
+}
+.prep h3 {
+  font-size: 20px;
+  color: hsl(332, 51%, 32%);
+  margin: 5px 0 10px;
+}
+.prep ul {
+  padding-left: 30px;
+}
+.prep ul li {
+  color: hsl(30, 10%, 34%);
+  position: relative;
+}
+.prep ul li::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: hsl(24, 5%, 18%);
+  left: -16px;
+  top: 8px;
+}
+.prep ul li span {
+  color: hsl(24, 5%, 18%);
+  font-weight: bold;
+}
+.ingred {
+  border-bottom: 1px solid hsl(30, 54%, 90%);
+}
+.ingred h3 {
+  color: hsl(14, 45%, 36%);
+  font-size: 25px;
+  font-family: "Young Serif", serif;
+  font-weight: 100;
+  margin-top: 20px;
+}
+.ingred ul {
+  padding: 20px;
+}
+.ingred ul li {
+  margin-bottom: 7px;
+  color: hsl(30, 10%, 34%);
+  position: relative;
+}
+.ingred ul li::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: hsl(24, 5%, 18%);
+  left: -16px;
+  top: 8px;
+}
+.inst {
+  border-bottom: 1px solid hsl(30, 54%, 90%);
+}
+.inst h3 {
+  color: hsl(14, 45%, 36%);
+  font-size: 25px;
+  font-family: "Young Serif", serif;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.inst ul {
+  padding: 0 30px 30px 30px;
+}
+.inst ul li {
+  color: hsl(30, 10%, 34%);
+  position: relative;
+  counter-increment: num;
+  margin-bottom: 10px;
+}
+.inst ul li::before {
+  content: counter(num) ".";
+  position: absolute;
+  left: -20px;
+  top: 2px;
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+  font-size: small;
+}
+.inst ul li span {
+  color: hsl(24, 5%, 18%);
+  font-weight: bold;
+}
+.nut h3 {
+  color: hsl(14, 45%, 36%);
+  font-size: 25px;
+  font-family: "Young Serif", serif;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.nut p {
+  font-size: 14px;
+  color: hsl(30, 10%, 34%);
+}
+.nut ul {
+  padding: 0 30px 30px 30px;
+  margin-top: 20px;
+}
+.nut ul li {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.nut ul li:last-child {
+  border-bottom: none;
+}
+.nut ul li div {
+  display: flex;
+  justify-content: space-around;
+}
+.nut ul li {
+  color: hsl(14, 45%, 36%);
+}
+.nut ul li span {
+  color: hsl(30, 10%, 34%);
+}
+hr {
+  color: hsl(30, 18%, 87%);
+}
